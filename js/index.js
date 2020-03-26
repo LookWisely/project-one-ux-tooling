@@ -7,7 +7,7 @@ window.addEventListener(`scroll`, event => {
   
     mainNavDot.forEach(link => {
       let section = document.querySelector(link.hash);
-    //   scrollIntoView({ behavior:'smooth' })
+      // scrollIntoView({ behavior:'smooth' })
       // if (section.offsetTop <= amtScrolled &&
       //   section.offsetTop + section.offsetHeight > amtScrolled) 
       if (section.getBoundingClientRect().top < window.innerHeight / 2 && section.getBoundingClientRect().top > 0)
