@@ -1,3 +1,32 @@
+Project by: Aakanksha Garg and Denys Shtanko
+
+#Documentation 
+
+Inspirational websites:
+1. https://brotherfilmco.com/ : Typeface and the overall aesthetic, want to achieve the moving text around the image.
+2. http://unitedmicrokingdoms.org/bioliberals/ : A good example of a scroll spy where the arrow highlights the content being viewed. 
+3. https://www.evanshalshaw.com/more/bondcars/c13.html : Another scrollspy example with the verticle bullets that would do some sort of    animation or just change colour when scrolled. 
+
+The aim was to create a very clean and minimalistic design highlighting the UI elements and improving the user experience.
+
+A) Scroll-spy
+The idea was to have an icon/bullet representation of the scrollspy where the bullets be highlighted when a particular section is in view or when hovered upon. Also directing the user to the desired chapter by having them click on the bullets. 
+
+B) Carousel 
+A carousel that gives an illustrated overview of what the story is about. Allowing users to flip through the images would provide them with a context to what they are about to read.
+
+C) Content reveal
+The user reaches the end of the story only to realise that there is more to it. Basically misleading the user to believe that they are done reading the story (which is not the case) and adding a form of graphical element/interesting loading animation while they wait fo the remaining chapters to be revealed. 
+
+Prototyping the idea:
+1. Mobile view (scroll and click to view):
+https://xd.adobe.com/view/9d509be6-dc3b-493e-54cb-b04c30284947-eb61/screen/c554307e-dfc1-48f1-b2f8-b309a0fa8596/iPhone-X-XS-5
+
+2. Desktop view:
+https://drive.google.com/file/d/1Xer9mm5ZFhZgwHNQyoW3RnEQq9w0F1fk/view?usp=sharing
+
+
+
 # PROJECT: UX TOOLING
 **CREATING DROP-IN UI COMPONENTS AND TOOLS TO IMPROVE THE USER EXPERIENCE OF AN ARTICLE**
 
