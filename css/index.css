@@ -1,10 +1,150 @@
 body {
-  font: 1em helvetica, arial, sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   background-color: #fff;
   color: #222;
 }
 
-.story {
+/* .story {
   padding: 0 1em;
   margin: 1em 0;
 }
+   */
+
+.carousel1 {
+  position: relative;
+  text-align: center;
+  color: black;
+  width: 100%;
+}
+
+.arrows .left {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.arrows .right {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 55%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.left {
+  display: inline-block;
+  vertical-align: left;
+  width: 1em;
+  height: 1em;
+  background-color:white;
+ 
+  border-radius: 100%;
+  margin-right: 0.5em;
+
+}
+
+.left:after {
+  content: '';
+  display: inline-block;
+  margin: 0.25em;
+  width: 0.4em;
+  height: 0.4em;
+  border-top: 0.1em solid #999999;
+  border-right: 0.1em solid #999999;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.right {
+  display: inline-block;
+  vertical-align: left;
+  width: 1em;
+  height: 1em;
+  background-color:white;
+  border-radius: 100%;
+  /* margin-right: 0.5em; */
+
+}
+
+.right:after {
+  content: '';
+  display: inline-block;
+  margin: 0.255em;
+  width: 0.4em;
+  height: 0.4em;
+  border-top: 0.1em solid #999999;
+  border-right: 0.1em solid #999999;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.title {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+nav {
+  position: sticky;
+  top: 1em;
+}
+.navbar-nav {
+    /* width: 100%; */
+    /* position: fixed;
+    top: 10em; */
+    margin: 0;
+    padding: 1.5em;
+}
+
+.navbar-nav li {
+  /* float: left;  */
+  margin-left: 0; 
+  list-style: none;
+  height: 1.5em;
+  /* padding:0; */
+}
+
+.navbar-nav li a {
+  background-color: lightgray;
+   border-radius: 70%;
+   cursor: pointer;
+   /* display: inline; */
+   font-size: 0;
+   height: 15px;
+   width: 15px;
+ }
+ 
+ /* .fullpage {
+   display: grid;
+   grid-template-columns: 1fr 3fr;;
+ } */
+ .navbar-nav li a:hover {
+   background-color:red; 
+  }
+
+ .nav a.active {
+  background-color: red;
+}
+
+
+.chapter {
+  text-align: left;
+  margin: 1em 0 0 0;
+  padding: 0em 1em 0em 4em;
+ }
+
+
