@@ -115,6 +115,8 @@ nav {
     top: 10em; */
     margin: 0;
     padding: 1.5em;
+
+    position: absolute;
 }
 
 .navbar-nav li {
@@ -134,16 +136,14 @@ nav {
    height: 15px;
    width: 15px;
  }
- 
- /* .fullpage {
-   display: grid;
-   grid-template-columns: 1fr 3fr;;
- } */
- .navbar-nav li a:hover {
-   background-color:red; 
-  }
 
- .nav a.active {
+
+
+.navbar-nav li a:hover {
+  background-color:red; 
+}
+
+.nav a.active {
   background-color: red;
 }
 
