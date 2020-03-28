@@ -35,7 +35,7 @@ window.addEventListener(`scroll`, event => {
       // scrollIntoView({ behavior:'smooth' })
       // if (section.offsetTop <= amtScrolled &&
       //   section.offsetTop + section.offsetHeight > amtScrolled) 
-      if (section.getBoundingClientRect().top < window.innerHeight / 2 && section.getBoundingClientRect().top > 0)
+      if (section.getBoundingClientRect().top < window.innerHeight / 3 && section.getBoundingClientRect().top > 0)
         {
         link.classList.add(`active`);
         } 
