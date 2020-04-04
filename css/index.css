@@ -137,14 +137,12 @@ a {
 .title {
   display: inline-block;
   position: absolute;
-  top: 52%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  background-color: black;
+  /* background-color: black; */
   color : white;
-
-  padding : 0 1em 0 1em;
+  /* padding : 0 0.5em 0 0.5em; */
   
 }
 
@@ -202,7 +200,6 @@ nav {
 .landing-splash-image {
   height : 100vh;
   width : 100%;
-
   background-color: #B2B2B2;
   background-size: cover;
   background-position: bottom;
@@ -214,7 +211,12 @@ nav {
 @media screen and (min-width: 30em) {
 
   .landing-splash-image {
+    height : 100vh;
     background-size : 30em auto;
+  }
+  
+  .title {
+    top: 48%;
   }
 
 }
@@ -225,7 +227,17 @@ nav {
     width : 40em;
     margin : 0 auto;
   }
+  
+  .title {
+    margin: 0 5em 0 9em;
+    top: 51%;
+    background-color: none;
+  }
 
+  .landing-splash-image {
+    height : 100vh;
+    background-position: 10em;
+  
 }
 
 
