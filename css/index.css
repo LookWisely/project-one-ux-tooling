@@ -137,13 +137,24 @@ a {
 .title {
   display: inline-block;
   position: absolute;
-  top: 48%;
+  top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* background-color: black; */
   color : white;
   /* padding : 0 0.5em 0 0.5em; */
   
+}
+
+.abouttitle {
+  display: inline-block;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* background-color: black; */
+  color : white;
+  text-align: center;
 }
 
 
@@ -211,12 +222,17 @@ nav {
 @media screen and (min-width: 30em) {
 
   .landing-splash-image {
-    height : 100vh;
+    height : 70vh;
     background-size : 30em auto;
   }
   
   .title {
-    top: 48%;
+    top: 30%;
+  }
+
+  .abouttitle {
+    top: 37%;
+
   }
 
 }
@@ -227,16 +243,24 @@ nav {
     width : 40em;
     margin : 0 auto;
   }
-  
+
   .title {
     margin: 0 5em 0 9em;
-    top: 51%;
+    top: 36%;
     background-color: none;
   }
 
+  .abouttitle {
+    margin: 0 2em 0 18em;
+    top: 42%;
+    background-color: none;
+
+  }
+
   .landing-splash-image {
-    height : 100vh;
+    height : 70vh;
     background-position: 10em;
+    background-size: 40em;
   
 }
 
