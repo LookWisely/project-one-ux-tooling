@@ -140,8 +140,8 @@ a {
   top: 43%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: black; */
-  color : white;
+  /* background-color: white; */
+  color : black;
   /* padding : 0 0.5em 0 0.5em; */
   
 }
@@ -153,28 +153,29 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 /* background-color: black; */
-  color : white;
+  color : black;
   text-align: center;
 }
 
 
 nav {
   position: sticky;
-  top: 1em;
+  top: 0.5em;
 }
+
 .navbar-nav {
     /* width: 100%; */
     /* position: fixed;
     top: 10em; */
     margin: 0;
-    padding: 1.5em;
-
+    padding: 0;
+    top: 0.5em;
     position: absolute;
 }
 
 .navbar-nav li {
   /* float: left;  */
-  margin-left: 0; 
+  margin-left: 1.5em; 
   list-style: none;
   height: 1.5em;
   /* padding:0; */
@@ -194,16 +195,27 @@ nav {
 
 .navbar-nav li a:hover {
   background-color:red; 
+  left: 0;
+  text-decoration: none;
 }
 
 .nav a.active {
   background-color: red;
+  text-decoration: none;
 }
+
+/* #chapter1 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 30px;
+  width: 420px;
+} */
 
 
 .chapter {
   text-align: left;
-  margin: 1em 0 0 0;
+  margin: 3em 0 0 0;
   padding: 0em 1em 0em 4em;
  }
 
@@ -215,7 +227,32 @@ nav {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+}
 
+/* Footer */
+footer {
+  display: table;
+  background-color: rgb(10, 10, 10);
+  width: 100vw;
+  height: 7em;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+
+.footer-elements {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 .5rem;
+  display: inline-block;
 }
 
 
@@ -223,6 +260,7 @@ nav {
 
   .landing-splash-image {
     height : 70vh;
+    background-position: 10em;
     background-size : 30em auto;
   }
   
@@ -232,10 +270,8 @@ nav {
 
   .abouttitle {
     top: 37%;
-
   }
 
-}
 
 @media screen and (min-width: 40em) {
 
@@ -244,24 +280,44 @@ nav {
     margin : 0 auto;
   }
 
+  .navbar-nav {
+    /* width: 100%; */
+    /* position: fixed;
+    top: 10em; */
+    margin: 0;
+    padding: 0;
+    top: 1em;
+    position: absolute;
+}
+
+.navbar-nav li {
+  /* float: left;  */
+  margin-left: 1em; 
+  list-style: none;
+  height: 1.5em;
+  /* padding:0; */
+}
+
   .title {
     margin: 0 5em 0 9em;
-    top: 36%;
+    top: 48%;
     background-color: none;
   }
 
   .abouttitle {
     margin: 0 2em 0 18em;
-    top: 42%;
+    top: 55%;
     background-color: none;
 
   }
 
   .landing-splash-image {
-    height : 70vh;
+    height : 100vh;
     background-position: 10em;
     background-size: 40em;
-  
 }
 
+footer {
+  font-size: 1em;
+}
 

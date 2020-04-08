@@ -26,13 +26,11 @@ let mainSection = document.querySelectorAll(`.chapter`);
 
 
 window.addEventListener(`scroll`, event => {
-    let amtScrolled = window.scrollY;
+  let amtScrolled = window.scrollY;
+
   
     mainNavDot.forEach(link => {
-      let section = document.querySelector(link.hash);
-      // scrollIntoView({ behavior:'smooth' })
-      // if (section.offsetTop <= amtScrolled &&
-      //   section.offsetTop + section.offsetHeight > amtScrolled) 
+      let section = document.querySelector(link.hash); 
       if (section.getBoundingClientRect().top < window.innerHeight / 2 && section.getBoundingClientRect().top > 0)
         {
         link.classList.add(`active`);
@@ -40,6 +38,9 @@ window.addEventListener(`scroll`, event => {
       else {
         link.classList.remove(`active`);
       }
+      });
     });
-  });
+
+    window.scrollTo({ left:0, top:0, behavior:'smooth' }) 
+
 
