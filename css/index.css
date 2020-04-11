@@ -256,6 +256,90 @@ footer {
 }
 
 
+.feedback-body {
+
+  margin : 3em auto;
+  padding: 4em 2em 4em 2em;
+  text-align: center;
+
+  width: calc(100% - 8em);
+
+  background-color: white;
+  
+  border-radius: 1em;
+
+}
+
+.submit-button {
+  border-radius: 3em;
+  background-color: black;
+  color: white;
+  border-style: none;
+
+  margin: 0 0 0 2em;
+}
+
+.comment-form {
+  border-radius: 0.5em;
+}
+
+.grid-align-wrap {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  padding: 0 2em 0 2em;
+}
+
+.comment-section {
+  width : 80%;
+  margin: 0 auto;
+  margin-top: 4em;
+}
+
+.single-comment {
+  margin: 1.5em 0 1.5em 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.profile-pic {
+  background-color: black;
+  width : 4em;
+  height : 4em;
+  border-radius : 100%;
+}
+
+.comment-body {
+  text-align: left;
+  padding-left : 1em;
+}
+
+.darkening-overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height : 100vh;
+  width : 100%;
+  background-color: black;
+  opacity : 0.5;
+  z-index: -1;
+}
+
+.send-feedback {
+  height : 7em;
+  width : 7em;
+  background-color : black;
+
+  position: fixed;
+
+  border-radius: 100%;
+  border-style: none;
+
+  top: calc(10vh - 2.5em);
+  left: calc(50% + 28em);
+
+  color : white;
+}
+
 @media screen and (min-width: 30em) {
 
   .landing-splash-image {
@@ -271,6 +355,9 @@ footer {
   .abouttitle {
     top: 37%;
   }
+
+
+
 
 
 @media screen and (min-width: 40em) {
@@ -321,3 +408,5 @@ footer {
   font-size: 1em;
 }
 
+
+}
