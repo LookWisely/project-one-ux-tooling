@@ -70,6 +70,9 @@ const loadFeedbackForm = (url) => {
         window.location.reload(false); //// doesnt work ??.
       });
 
+      console.log($newContent);
+      console.log($oldContent);
+
       $oldContent.innerHTML = $oldContent.innerHTML + $newContent.innerHTML;
 
     })
@@ -78,7 +81,7 @@ const loadFeedbackForm = (url) => {
 let $feedbackButton = document.querySelector(`.send-feedback`);
 $feedbackButton.addEventListener(`click`, event => {
 
-  scrollTo(0,0, behsviour:`smooth`);
+  scrollTo(0,0);
   loadFeedbackForm(`feedback-form.html`);
 
 });
