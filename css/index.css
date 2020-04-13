@@ -263,6 +263,7 @@ footer {
 
 
 .parallax-picture {
+  z-index: -1;
   width : auto;
   height: 20em;
 
@@ -271,10 +272,11 @@ footer {
 
 .parallax-layer {
 
+  z-index: -0.5;
   color: #777777;
   font-family: Anonymous Pro, monospace;
 
-  width : 80%;
+  width : 100%;
   height: inherit;
   
 
