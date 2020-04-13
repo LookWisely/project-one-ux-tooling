@@ -47,12 +47,14 @@ window.scrollTo({ left:0, top:0, behavior:'smooth' })
 // load feedback for on top
 
 let $docAdress = "./feedback-form.html";
-
+let $oldContent = document.querySelector(`.story`);
+let $contentBackup = Object.assign({}, $oldContent.innerHTML);
+let $submitButton;
 
 const loadFeedbackForm = (url) => {
   
-  scrollTo(0,0);
-  
+  $contentBackup = Object.assign({}, $oldContent.innerHTML);
+
   fetch(url)
     .then((response) => {
       return response.text();
@@ -61,8 +63,12 @@ const loadFeedbackForm = (url) => {
       let parser = new DOMParser();
       let newPage = parser.parseFromString(html, `text/html`);
 
-      let $oldContent = document.querySelector(`.story`);
       let $newContent = newPage.querySelector(`#content`);
+
+      $submitButton = $newContent.querySelector(`.submit-button`);
+      $submitButton.addEventListener(`click`, event => {
+        window.location.reload(false); //// doesnt work ??.
+      });
 
       console.log($newContent);
       console.log($oldContent);
@@ -71,6 +77,14 @@ const loadFeedbackForm = (url) => {
 
     })
 }
+
+let $feedbackButton = document.querySelector(`.send-feedback`);
+$feedbackButton.addEventListener(`click`, event => {
+
+  scrollTo(0,0);
+  loadFeedbackForm(`feedback-form.html`);
+
+});
 
 
 
