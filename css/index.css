@@ -263,20 +263,17 @@ footer {
 
 
 .parallax-picture {
-  z-index: -1;
   width : auto;
-  height: 20em;
 
   background-color: black;
 }
 
 .parallax-layer {
 
-  z-index: -0.5;
   color: #777777;
   font-family: Anonymous Pro, monospace;
 
-  width : 100%;
+  width : 40em;
   height: inherit;
   
 
@@ -286,16 +283,14 @@ footer {
 
   position: absolute;
 
-  background-size: 30em auto;
+  background-size: var(--the-strip-width) auto;
 }
 
 .grain {
-  background-image: url('../img/grain-1.gif');
-  opacity: 0.4;
-  mix-blend-mode: overlay;
+    background-image: url('../img/grain-1.gif');
+    opacity: 0.4;
+    mix-blend-mode: overlay;
 }
-
-
 
 
 
@@ -410,10 +405,21 @@ footer {
   }
 
 
+@media screen and (max-width: 40em){
+  .parallax-picture {
+    width: auto;
+  }
 
+  .parallax-layer {
+    width: auto;
+  }
+}
 
 
 @media screen and (min-width: 40em) {
+
+
+
 
   .fullpage {
     width : 40em;
