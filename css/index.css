@@ -258,7 +258,7 @@ footer {
 
 .feedback-body {
 
-  margin : 3em auto;
+  margin : 3em 4em;
   padding: 4em 2em 4em 2em;
   text-align: center;
 
@@ -267,6 +267,9 @@ footer {
   background-color: white;
   
   border-radius: 1em;
+
+  position: absolute;
+  top: 3em;
 
 }
 
@@ -325,6 +328,7 @@ footer {
 }
 
 .send-feedback {
+  
   height : 7em;
   width : 7em;
   background-color : black;
@@ -338,6 +342,7 @@ footer {
   left: calc(50% + 28em);
 
   color : white;
+
 }
 
 @media screen and (min-width: 30em) {

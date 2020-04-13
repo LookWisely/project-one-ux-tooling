@@ -38,9 +38,39 @@ window.addEventListener(`scroll`, event => {
       else {
         link.classList.remove(`active`);
       }
-      });
     });
+});
 
-    window.scrollTo({ left:0, top:0, behavior:'smooth' }) 
+window.scrollTo({ left:0, top:0, behavior:'smooth' }) 
+  
+
+// load feedback for on top
+
+let $docAdress = "./feedback-form.html";
+
+
+const loadFeedbackForm = (url) => {
+  
+  scrollTo(0,0);
+  
+  fetch(url)
+    .then((response) => {
+      return response.text();
+    })
+    .then((html) => {
+      let parser = new DOMParser();
+      let newPage = parser.parseFromString(html, `text/html`);
+
+      let $oldContent = document.querySelector(`.story`);
+      let $newContent = newPage.querySelector(`#content`);
+
+      console.log($newContent);
+      console.log($oldContent);
+
+      $oldContent.innerHTML = $oldContent.innerHTML + $newContent.innerHTML;
+
+    })
+}
+
 
 
