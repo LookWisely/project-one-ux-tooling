@@ -256,6 +256,52 @@ footer {
 }
 
 
+
+
+
+
+
+
+.parallax-picture {
+  width : auto;
+  height: 20em;
+
+  background-color: black;
+}
+
+.parallax-layer {
+
+  color: #777777;
+  font-family: Anonymous Pro, monospace;
+
+  width : 80%;
+  height: inherit;
+  
+
+  background-color: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+
+  background-size: 30em auto;
+}
+
+.grain {
+  background-image: url('../img/grain-1.gif');
+  opacity: 0.4;
+  mix-blend-mode: overlay;
+}
+
+
+
+
+
+
+
+
+
+
 .feedback-body {
 
   margin : 3em 4em;
