@@ -302,7 +302,8 @@ footer {
 
 .feedback-body {
 
-  margin : 3em 4em;
+  box-sizing: border-box;
+  margin : 0 4em;
   padding: 4em 0 4em 2em;
   text-align: center;
 
@@ -312,10 +313,25 @@ footer {
   
   border-radius: 1em;
 
-  position: absolute;
-  top: 3em;
-  
+  position: fixed;
+  top: 2em;
 
+}
+
+.feedback-body p {
+  width : 80%;
+  margin: 2em auto;
+}
+
+.cross-button {
+  position : absolute;
+  left : 3em;
+  height : 3em;
+  width : 3em;
+
+  background-image: url("../img/cross.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .submit-button {
@@ -338,9 +354,12 @@ footer {
 }
 
 .comment-section {
+
+  height : 12em;
   width : 80%;
   margin: 0 auto;
   margin-top: 4em;
+  overflow-y: scroll;
 }
 
 .single-comment {

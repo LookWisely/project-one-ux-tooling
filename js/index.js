@@ -85,7 +85,8 @@ const loadFeedbackForm = (url) => {
 let $feedbackButton = document.querySelector(`.send-feedback`);
 $feedbackButton.addEventListener(`click`, event => {
 
-  scrollTo(0,0);
+  //scrollTo(0,0);
+  document.body.style.overflowY = `hidden`;
   loadFeedbackForm(`feedback-form.html`);
 
 });
