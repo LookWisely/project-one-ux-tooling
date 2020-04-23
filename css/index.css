@@ -2,6 +2,7 @@ body {
   font-family: 'Anonymous Pro', monospace;
   background-color: #fff;
   color: #222;
+  width: 100%;
 }
 
 /* .story {
@@ -465,6 +466,7 @@ footer {
 }
 
 footer {
+  width: 100%;
   font-size: 1em;
 }
 
