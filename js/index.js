@@ -66,7 +66,11 @@ const loadFeedbackForm = (url) => {
       let $newContent = newPage.querySelector(`#content`);
 
       $submitButton = $newContent.querySelector(`.submit-button`);
+      console.log(`Button is spawned and recognized`);
+      console.log($submitButton);
+
       $submitButton.addEventListener(`click`, event => {
+        console.log(`reload is invoked`);
         window.location = window.location.self;
       });
 
