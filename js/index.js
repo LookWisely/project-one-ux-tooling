@@ -69,10 +69,13 @@ const loadFeedbackForm = (url) => {
       console.log(`Button is spawned and recognized`);
       console.log($submitButton);
 
+
+      //================================ THIS EVENT LISTENER DOESN'T GET ADDED ========
       $submitButton.addEventListener(`click`, event => {
         console.log(`reload is invoked`);
         window.location = window.location.self;
       });
+      //===============================================================================
 
       console.log($newContent);
       console.log($oldContent);
