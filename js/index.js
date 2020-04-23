@@ -67,7 +67,7 @@ const loadFeedbackForm = (url) => {
 
       $submitButton = $newContent.querySelector(`.submit-button`);
       $submitButton.addEventListener(`click`, event => {
-        window.location.reload(false); //// doesnt work ??.
+        window.location = window.location.self;
       });
 
       console.log($newContent);
